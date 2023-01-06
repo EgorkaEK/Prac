@@ -1,0 +1,10 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (2022_12_28.vcxproj, CalcApp.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  main.cpp
+C:\LissakovskiyP3E\ProjectV\CalcApp\Source.h(4,6): warning C4215: нестандартное расширение: long float
+C:\LissakovskiyP3E\ProjectV\CalcApp\Source.h(4,21): warning C4215: нестандартное расширение: long float
+C:\LissakovskiyP3E\ProjectV\CalcApp\Source.h(4,35): warning C4215: нестандартное расширение: long float
+C:\LissakovskiyP3E\ProjectV\CalcApp\main.cpp(25,6): warning C4215: нестандартное расширение: long float
+C:\LissakovskiyP3E\ProjectV\CalcApp\main.cpp(25,21): warning C4215: нестандартное расширение: long float
+C:\LissakovskiyP3E\ProjectV\CalcApp\main.cpp(25,35): warning C4215: нестандартное расширение: long float
+C:\LissakovskiyP3E\ProjectV\CalcApp\main.cpp(45,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  CalcApp.vcxproj -> C:\LissakovskiyP3E\ProjectV\x64\Debug\2023_01_04.exe
