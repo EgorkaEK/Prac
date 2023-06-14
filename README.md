@@ -189,3 +189,153 @@
 
 60. Работа с графикой и изображениями(Андроид).
 Ответ: В Android можно работать с графикой и изображениями, используя классы Bitmap, Drawable, Canvas и ресурсы в папке drawable. Также можно использовать библиотеки, такие как Picasso и Glide, для загрузки изображений.
+
+1 Задача. Решение
+def num(a, b, c):
+    return [x **2 if x < 0 else x ** 3 for x in[a, b, c]]
+
+print(num(-5, 5, 0))
+
+2 Задача. Решение
+def min_max(a, b, c):
+    return min(a, b, c), max(a, b, c)
+
+print(min_max(5, 8, 7))
+
+3 Задача. Решение
+a = int(input("Введите первое число: "))
+b = int(input("Введите второе число: "))
+
+c = a ** 2 + b ** 2
+d = (a + b) ** 2
+
+if c > d:
+    print("Сумма квадратов больше")
+else:
+    print("Квадрат суммы больше")
+
+4 Задача. Решение
+a = int(input("a: "))
+b = int(input("b: "))
+c = int(input("c: "))
+
+if a ** 2 + b ** 2 == c ** 2:
+    print("Треугольник прямоугольный")
+else:
+    print("Треугольник не прямоугольный")
+
+5 Задача. Решение
+a = float(input("a: "))
+b = float(input("b: "))
+
+c = a + b + (a ** 2 + b ** 2) ** 0.5
+d = 0.5 * a * b
+
+print(f"Периметр прямоугольного треугольника: {c}")
+print(f"Площадь прямоугольного треугольника: {d}")
+
+6 Задача. Решение
+print(int(input("Длина окружности: "))**2 / (3.14 * 4))
+
+7 Задача. Решение
+№1 Cпособ
+a = int(input())
+b = int(input())
+res = 0
+cnt = 1
+while cnt <= b:
+    res += a
+    cnt += 1
+print(res)
+
+№2 Cпособ
+print(int(int(input()) / (1 / int(input()))))
+
+8 Задача. Решение
+a = int(input("a: "))
+b = int(input("b: "))
+for i in range(a,b +1):
+    print(i, end=' ')
+
+9 Задача. Решение
+a = "Анатолий"
+print(a.lower().count("а"))
+
+10 Задача. Решение
+strr = "Anatoly"
+print(strr[:1] + strr[2:3] + strr[4:])
+
+11 Задача. Решение
+from datetime import datetime, date
+
+class Person:
+    def __init__(self, full_name, birth_date, address):
+        self.full_name = full_name
+        self.birth_date = birth_date
+        self.address = address
+
+    def days_until_next_birthday(self):
+        today = date.today()
+        next_birthday = date(today.year, self.birth_date.month, self.birth_date.day)
+
+        if next_birthday < today:
+            next_birthday = date(today.year + 1, self.birth_date.month, self.birth_date.day)
+
+        days_left = (next_birthday - today).days
+        return days_left
+
+full_name = "Иванов Иван Иванович"
+birth_date = date(1990, 12, 31)
+address = "Москва, Россия"
+
+person = Person(full_name, birth_date, address)
+days_left = person.days_until_next_birthday()
+print(f"До следующего дня рождения осталось {days_left} дней")
+
+12 Задача. Решение
+def fyfy(text):
+    return text.replace("бяка", "вырезано цензурой")
+
+print(fyfy("Это бяка, но не бяка"))
+
+13 Задача. Решение
+a = [1, 2, 3, 4, 5]
+print(a[::-1])
+
+14 Задача. Решение
+odd_numbers = [2 * i + 1 for i in range(10)]
+output_string = ', '.join(map(str, odd_numbers))
+print(output_string)
+
+15 Задача. Решение
+import tkinter as tk
+
+window = tk.Tk()
+window.title("Пример формы")
+window.geometry("300x200")
+
+def button_click():
+    entered_text = entry.get()
+    label.config(text="Привет, " + entered_text + "!")
+
+button = tk.Button(window, text="Нажми меня", command=button_click)
+button.pack()
+
+label = tk.Label(window, text="Введите ваше имя:")
+label.pack()
+
+entry = tk.Entry(window)
+entry.pack()
+
+window.mainloop()
+
+16 Задача. Решение
+def a(s, n):
+    return s[-n:] if len(s) > n else "." * (n - len(s)) + s
+
+print(a("hello", 3))
+print(a("hi", 5))
+
+17 Задача. Решение
+alphabet_string = ', '.join(chr(code) for code in range(ord('a'), ord('z') + 1))
+print(alphabet_string)
